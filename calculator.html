@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+h1{
+    text-align: center;
+}
+body{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    background-image: url(https://img.freepik.com/free-photo/top-view-desk-concept-with-notepad_23-2148604955.jpg?w=1380&t=st=1691477509~exp=1691478109~hmac=907986476d7c5980547807bcb4c1b461112c24c09d6e6678f0a01b522632533e);
+    background-repeat: no-repeat;
+    background-size:1520px 700px ;
+
+}
+table{
+    margin-top: 10px;
+}
+.center{
+    padding: 10px;
+    margin-top: 10px;
+}
+button{
+    background-color: #373937; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+  font-size: bold;
+}
+input{
+    width: 320px;
+    color: rgb(238, 162, 69);
+}
+button:hover {
+    background-color: #e1d0f6;
+}
+.middle{
+    margin-top: -100px;
+}
+h1{
+    color:aquamarine
+}
+
+</style>
+<body>
+    <div class="middle">
+    <div class =calc><h1>CALCULATOR</h1></div>
+    <div class="calculator">
+        <input type="text" id="result"  width="1000px" readonly>    
+
+    </div>
+    
+    <div class="center">
+    <table>
+        <tr>
+            <td><button onclick="append(7)">7</button></td>
+            <td><button onclick="append(8)">8</button></td>
+            <td><button onclick="append(9)">9</button></td>
+            <td><button onclick="operation('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(4)">4</button></td>
+            <td><button onclick="append(5)">5</button></td>
+            <td><button onclick="append(6)">6</button></td>
+            <td><button onclick="operation('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(3)">3</button></td>
+            <td><button onclick="append(2)">2</button></td>
+            <td><button onclick="append(1)">1</button></td>
+            <td><button onclick="operation('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(0)">0</button></td>
+            <td><button onclick="clearresult('c')">C</button></td>
+            <td><button onclick="calculate('=')">=</button></td>
+            <td><button onclick="append('/')">/</button></td>
+        </tr>
+    </table>
+</div>
+</div>
+    <script src="calculator.js"></script>
+    
+</body>
+</html>
